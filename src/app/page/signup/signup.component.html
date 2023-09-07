@@ -1,0 +1,93 @@
+<div class="bootstrap-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <div class="container text-center">
+                    <img src="../../../assets/flower.PNG" alt="flower" class="logo">
+                </div>
+
+                <h1 class="text-center">Register Here !!!</h1>
+                <form class="text-center " (ngSubmit)="formSubmit()">
+                    <p>
+                        <mat-form-field class=" full-width" appearance="fill">
+                          <mat-label>Username</mat-label>
+                          <input 
+                          required
+                          [(ngModel)]="user.username"
+                          name="username"
+                          matInput placeholder="Enter">
+                          <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                        </mat-form-field>
+                      </p>
+
+                      <p>
+                        <mat-form-field class=" full-width" appearance="outline">
+                          <mat-label>Password</mat-label>
+                          <input
+                          required
+                          [(ngModel)]="user.password"
+                          name="password"
+                         type="password"
+                          matInput placeholder="Enter">
+                          <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                        </mat-form-field>
+                      </p>
+
+                      <p>
+                        <mat-form-field class=" full-width" appearance="outline">
+                          <mat-label>Email</mat-label>
+                          <input 
+                          required
+                          [(ngModel)]="user.email"
+                          name="email"
+                          required pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$" 
+                          email="true"
+                          matInput placeholder="Enter">
+                          <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                        </mat-form-field>
+                      </p>
+                      <p>
+                        <mat-form-field class=" full-width" appearance="outline">
+                          <mat-label>First name</mat-label>
+                          <input
+                          required
+                          [(ngModel)]="user.firstname"
+                          name="firstname"
+                          matInput placeholder="Enter">
+                          <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                        </mat-form-field>
+                      </p>
+                      <p>
+                        <mat-form-field class=" full-width" appearance="outline">
+                          <mat-label>Last name</mat-label>
+                          <input 
+                          required
+                          [(ngModel)]="user.lastname"
+                          name="lastname"
+                          matInput placeholder="Enter">
+                          <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                        </mat-form-field>
+                      </p>
+                      <p>
+                        <mat-form-field class=" full-width" appearance="outline">
+                          <mat-label>Phone Number</mat-label>
+                          <input 
+                          [(ngModel)]="user.phone"
+                          name="phone"
+                          matInput placeholder="Enter">
+                          <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                        </mat-form-field>
+                      </p>
+                      
+                      <div class="container">
+                        <button type="submit" mat-raised-button class="color-blue">Register</button>  
+                        <button mat-raised-button class="color-pink">Clear</button>       
+                    </div>
+                      
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+

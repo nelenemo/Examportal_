@@ -1,0 +1,28 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+  .example-icon {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #ccc;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333;
+  }
+
+  .favorite-icon {
+    background-color:blueviolet;
+    padding: 5px 50px;
+    color: #fff;
+  }
+  .color-pink{
+    background-color: darkmagenta;
+  }
+
+  .mr-20 {
+    margin-right: 20px;
+  }
+
+  .ml-22 {
+    margin-left: 22px;
+  }  

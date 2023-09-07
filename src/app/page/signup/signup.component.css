@@ -1,0 +1,20 @@
+.text-center{
+    text-align: center;
+}
+.logo{
+    width: 100px;
+    height: 100px;
+    padding-top: 20px;
+}
+.full-width{
+    width: 70%;
+}
+.color-blue{
+    background-color: blueviolet;
+    color:white;
+}
+.color-pink{
+    background-color:darkmagenta;
+    color:white;
+
+}

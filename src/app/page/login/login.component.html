@@ -1,0 +1,54 @@
+<div class="bootstrap-wrapper">
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 offset-md-3 mt20 mb20">
+            <mat-card>
+            <div class="container text-center">
+                
+                <img src="../../../assets/flower.PNG" alt="flower" class="logo">
+            </div>
+
+            <h1 class="text-center">Login Here !!!</h1>
+
+            <form class="text-center " (ngSubmit)="formSubmit()" >
+                <!-- username field -->
+                <p>           
+
+                    <mat-form-field class=" full-width" appearance="fill">
+                      <mat-label>Username</mat-label>
+                      <input 
+                      [(ngModel)]="loginData.username"
+                     name="username"
+                      matInput placeholder="Enter">
+                      <mat-hint>Valid username</mat-hint>
+                    </mat-form-field>
+                  </p>
+
+
+                    <!-- password field -->
+                <p>
+                    <mat-form-field class=" full-width" appearance="fill">
+                      <mat-label>Password</mat-label>
+                      <input    
+                      [(ngModel)]="loginData.password"
+                      name="password"     
+                      type="password"               
+                      matInput placeholder="Enter">
+                    </mat-form-field>
+                  </p>
+
+                  <div class="button-container">
+                    <button  class=" mr20 ml20 mb20 color-blue  " type="submit" >Login</button>
+                    <button  class="color-pink mb20" type="submit">Reset</button>
+                  </div>
+                  
+
+            </form>
+        </mat-card>
+        </div>
+    </div>
+</div>
+
+
+</div>
