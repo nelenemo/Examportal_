@@ -1,0 +1,56 @@
+.text-center{
+    text-align: center;
+   
+}
+.center-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+.profile-image{
+    max-width: 200px;
+    max-height: 200px;
+    border: 2px solid #673ab7;
+    border-radius: 50%;
+}
+
+.mt20{
+    margin-top: 20px !important;
+  }
+  .mb20{
+    margin-bottom: 20px !important;
+  }
+  .ml20{
+    margin-left: 20px !important;
+  }
+  .mr20{
+    margin-right: 20px !important;
+  }
+
+  .table{
+    width: 100%;
+    border: 1px solid;
+    border-collapse: collapse;
+
+    
+  }
+  .table tr td{
+    padding: 10px 50px;
+    border: 1px solid;
+  }
+  .color-blue{
+    background-color: blueviolet;
+    color:white;
+    width: 100px; /* Adjust the width as needed */
+    height: 50px; /* Adjust the height as needed */
+    font-size: 18px;
+  }
+  .color-pink{
+    background-color:darkmagenta;
+    color:white;
+    width: 100px; /* Adjust the width as needed */
+    height: 50px; /* Adjust the height as needed */
+    font-size: 18px;
+  
+  }

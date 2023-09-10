@@ -1,10 +1,11 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import {MatToolbarModule} from '@angular/material/toolbar'; 
-import {MatIconModule} from '@angular/material/icon'; 
 import {MatInputModule} from '@angular/material/input'; 
 import {MatFormFieldModule} from '@angular/material/form-field'
 import {MatCardModule} from '@angular/material/card';
+import {MatIconModule} from '@angular/material/icon'; 
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -19,6 +20,10 @@ import {MatSnackBarModule} from '@angular/material/snack-bar'
 import {authInterceptorProviders } from './services/auth.interceptor';
 import { DashboardComponent } from './page/admin/dashboard/dashboard.component';
 import { UserDashboardComponent } from './page/user/user-dashboard/user-dashboard.component';
+import { ProfileComponent } from './page/profile/profile.component';
+import {MatListModule} from '@angular/material/list';
+import { SidebarComponent } from './page/admin/sidebar/sidebar.component';
+import {  WelcomeComponent } from './page/admin/welcome/welcome.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +33,10 @@ import { UserDashboardComponent } from './page/user/user-dashboard/user-dashboar
     LoginComponent,
     SignupComponent,
     DashboardComponent,
-    UserDashboardComponent
+    UserDashboardComponent,
+    ProfileComponent,
+    SidebarComponent,   
+    WelcomeComponent
   ],
   imports: [
     BrowserModule,
@@ -41,7 +49,8 @@ import { UserDashboardComponent } from './page/user/user-dashboard/user-dashboar
     FormsModule,
     HttpClientModule,
     MatSnackBarModule,
-    MatCardModule
+    MatCardModule,
+    MatListModule
   ],
   providers: [
     authInterceptorProviders

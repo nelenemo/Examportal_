@@ -1,0 +1,50 @@
+<mat-card *ngIf="user">
+    <h2 class="text-center mt20">Your Profile Details</h2>
+    <mat-card-content>
+        <div class="bootstrap-wrapper">
+            <div class="container">
+                <div class="container text-center">
+                    <img src="https://wallpapers-clan.com/wp-content/uploads/2022/08/default-pfp-2.jpg"
+                     alt="defult image"
+                     class="profile-image"                    
+                     >
+                     <h1 class="mt20">{{user.firstname}} {{user.lastname}}</h1>
+                   
+                </div>
+                <div class="row">
+                    <div class="col-md-10 offset-md-1">
+                        <!--table details-->
+                        <table class="table text-center">
+                            <tr>
+                                <td>Username</td>
+                                <td>{{user.username}}</td>
+                            </tr>
+                            <tr>
+                                <td>Id</td>
+                                <td>{{user.id}}</td>
+                            </tr>
+                            <tr *ngIf="user.phone">
+                                <td>Phone</td>
+                                <td>{{user.phone}}</td>
+                            </tr>
+                            <tr >
+                                <td>Role</td>
+                                <td>{{user.authorities[0].authority}}</td>
+                            </tr>
+                            <tr>
+                                <td>Status</td>
+                                <td>{{user.enabled?"ACTIVE":"NOT ACTIVE"}}</td>
+                            </tr>
+                        </table>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+    </mat-card-content>
+    <mat-card-actions class="center-buttons" >
+        <button mat-raised-button color="primary" class="color-blue">UPDATE</button>
+        <button mat-raised-button color="accent" class="color-pink">SHARE</button>
+      </mat-card-actions>
+</mat-card>
