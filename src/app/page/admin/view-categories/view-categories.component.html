@@ -1,0 +1,22 @@
+<mat-card>
+    <mat-list>
+        <div mat-subheader>All</div>
+        <mat-list-item *ngFor="let c of categories" class="custom-list-item" >
+            <mat-icon mat-list-icon class="folder" >folder</mat-icon>
+            <div  class="custom-list-item"  class="c">{{c.title}} 
+
+            </div>
+          
+            <!-- <div  class="ml100" class="d" >{{c.description}}
+
+            </div> -->
+            
+        </mat-list-item>
+        
+    
+    </mat-list>
+
+    <div class="container text-center mt20 mb20 ">
+        <button class="color-blue width">Add New Card</button>
+    </div>
+</mat-card>

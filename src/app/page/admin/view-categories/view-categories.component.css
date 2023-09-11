@@ -1,0 +1,26 @@
+.folder{
+    display: inline;
+    padding-left: 10px;
+}
+.c{
+    display: inline;
+    padding-left: 60px;
+    padding-bottom: 20px;
+}
+
+.mt20{
+    margin-top: 20px !important;
+  }
+  .mb20{
+    margin-bottom: 20px !important;
+  }
+  .ml20{
+    margin-left: 20px !important;
+  }
+  .mr20{
+    margin-right: 20px !important;
+  }
+
+  .ml100{
+    margin-left: 95px !important;
+  }
