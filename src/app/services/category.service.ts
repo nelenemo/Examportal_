@@ -17,6 +17,11 @@ export class CategoryService {
 
   public categories(){
     console.log("calling categories")
-    return this._http.get(`${this.url}/category/`)
+    return this._http.get(`${this.url}/category/`);
+  }
+
+  public addCategory(category:any){
+    console.log("adding new category");
+    return this._http.post(`${this.url}/category/`,category);
   }
 }
