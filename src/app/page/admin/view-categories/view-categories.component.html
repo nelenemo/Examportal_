@@ -1,4 +1,4 @@
-<mat-card>
+<mat-card class="mt20">
     <mat-list>
         <h1 class="text-center">All Categories</h1>
         <mat-list-item *ngFor="let c of categories" class="custom-list-item">
@@ -17,6 +17,6 @@
     </mat-list>
 
     <div class="container text-center mt20 mb20 ">
-        <button class="color-blue width">Add New Card</button>
+        <button routerLink="/admin/add-categories"  class="color-blue width">Add New Cartegory</button>
     </div>
 </mat-card>

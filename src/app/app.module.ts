@@ -6,6 +6,9 @@ import {MatFormFieldModule} from '@angular/material/form-field'
 import {MatCardModule} from '@angular/material/card';
 import {MatIconModule} from '@angular/material/icon'; 
 import {MatDividerModule} from '@angular/material/divider'; 
+import {MatButtonModule} from '@angular/material/button'; 
+import {MatSlideToggleModule} from '@angular/material/slide-toggle'; 
+import {MatSelectModule} from '@angular/material/select'; 
 
 
 
@@ -28,6 +31,8 @@ import { SidebarComponent } from './page/admin/sidebar/sidebar.component';
 import {  WelcomeComponent } from './page/admin/welcome/welcome.component';
 import { ViewCategoriesComponent } from './page/admin/view-categories/view-categories.component';
 import { AddCategoriesComponent } from './page/admin/add-categories/add-categories.component';
+import { ViewQuizzesComponent } from './page/admin/view-quizzes/view-quizzes.component';
+import { AddQuizComponent } from './page/admin/add-quiz/add-quiz.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +45,7 @@ import { AddCategoriesComponent } from './page/admin/add-categories/add-categori
     UserDashboardComponent,
     ProfileComponent,
     SidebarComponent,   
-    WelcomeComponent, ViewCategoriesComponent, AddCategoriesComponent
+    WelcomeComponent, ViewCategoriesComponent, AddCategoriesComponent, ViewQuizzesComponent, AddQuizComponent
   ],
   imports: [
     BrowserModule,
@@ -55,7 +60,10 @@ import { AddCategoriesComponent } from './page/admin/add-categories/add-categori
     MatSnackBarModule,
     MatCardModule,
     MatListModule,
-    MatDividerModule
+    MatDividerModule,
+    MatButtonModule,
+    MatSlideToggleModule,
+    MatSelectModule
   ],
   providers: [
     authInterceptorProviders

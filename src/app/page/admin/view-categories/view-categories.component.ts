@@ -44,7 +44,7 @@ constructor( private _category:CategoryService){
       },
       (error)=>{
         console.log("error occur"+error);
-        Swal.fire("error", "Error is loading", "error");
+        Swal.fire("error", "Couldnot fetch from db", "error");
       }
     );
     }
