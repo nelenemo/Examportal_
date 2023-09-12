@@ -11,7 +11,7 @@ export class ViewQuizzesComponent implements OnInit {
   constructor(private _quiz: QuizService) { }
   quizzes: any[] = [
     {
-      qId: 21,
+      qid: 21,
       title: "Science",
       description: "Science encompasses the systematic study of the structure and behaviour of the physical and natural world through observation and experiment, and technology is the application of scientific knowledge for practical purposes.",
       maxMarks: "100",
@@ -22,7 +22,7 @@ export class ViewQuizzesComponent implements OnInit {
       }
     },
     {
-      qId: 25,
+      qid: 25,
       title: "Math",
       description: "all about Math",
       maxMarks: "100",
@@ -35,6 +35,7 @@ export class ViewQuizzesComponent implements OnInit {
   ]
 
   ngOnInit(): void {
+    console.log("start")
     this._quiz.quizzes().subscribe(
       (data: any) => {
         this.quizzes = data;
@@ -48,19 +49,22 @@ export class ViewQuizzesComponent implements OnInit {
     );
 
   }
-
-
-  deleteQuiz(qid: any) {
-    console.log("(((((((((((((((((((" + qid);
+    deleteQuiz(qid: any) {
     this._quiz.deleteQuiz(qid).subscribe(
-      (data:any) => {
+      (data) => {
+        
+        
           console.log("ID deleted successfully");
           Swal.fire("Success!!", "Quiz successfully deleted", "success");
-          
       },
+      (error)=>{
+        Swal.fire("error!!", "Quiz error ", "error");
+      }
    
     );
   }
+
+ 
   
 
 }

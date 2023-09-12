@@ -18,8 +18,8 @@ export class QuizService {
     return this._http.post(`${this.url}/quiz/`, quiz)//pass data  in quiz
   } 
 
-  public deleteQuiz(qid:number){
+  public deleteQuiz(qid: any){
     console.log("inside delete service");
-    return this._http.delete(`${this.url}/quiz/${qid}`)
+    return this._http.delete(`${this.url}/quiz/${qid}`);
   }
 }
